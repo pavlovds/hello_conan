@@ -1,20 +1,10 @@
 dist: trusty
 language: cpp
 
-os:
-    # ????? ????????? CI ? ?? Linux, ? ?? Mac OS X...
-    - linux
-    - osx
-
-compiler:
-    # ... ? ? ??????? GCC, ? Clang
-    - gcc
-    - clang
-
 script:
   - mkdir build
   - cd build
-  - cmake .. -DCMAKE_CXX_COMPILER=g++-6
+  - cmake ..
   - cmake --build .
   - ./hello
 
