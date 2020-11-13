@@ -1,6 +1,16 @@
 dist: trusty
 language: cpp
 
+os:
+    # ????? ????????? CI ? ?? Linux, ? ?? Mac OS X...
+    - linux
+    - osx
+
+compiler:
+    # ... ? ? ??????? GCC, ? Clang
+    - gcc
+    - clang
+
 script:
   - mkdir build
   - cd build
@@ -8,12 +18,3 @@ script:
   - cmake --build .
   - ./hello
 
-env:
-  - COMPILER=g++-6
- 
-addons:
-  apt:
-	 sources:
-	 - ubuntu-toolchain-r-test
-	 packages:
-	 - g++-6
