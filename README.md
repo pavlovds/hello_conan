@@ -1,4 +1,4 @@
 # hello_conan
 Hello conan.io
 
-https://img.shields.io/travis/pavlovds/hello_conan
+https://travis-ci.com/pavlovds/hello_conan.svg?branch=main
